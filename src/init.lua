@@ -1,6 +1,6 @@
 --!strict
 
-local IEffect = require(script.Parent["effect-types"]);
+local IEffect = require("@pkg/effect_types");
 type Page = IEffect.Page;
 
 export type ContinueDialogueProperties = {
