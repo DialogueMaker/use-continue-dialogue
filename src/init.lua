@@ -1,6 +1,6 @@
 --!strict
 
-local IEffect = require("@pkg/effect_types");
+local IEffect = require(script.Parent.roblox_packages.effect_types);
 type Page = IEffect.Page;
 
 export type ContinueDialogueProperties = {
