@@ -5,7 +5,6 @@ type Page = IEffect.Page;
 
 export type ContinueDialogueProperties = {
   isNPCTalking: boolean;
-  clickSoundRef: {current: Sound?};
   allowPlayerToSkipDelay: boolean;
   pages: {Page};
   currentPageIndex: number;
@@ -20,13 +19,6 @@ local function useContinueDialogue(props: ContinueDialogueProperties)
   return function()
 
     if props.isNPCTalking then
-
-      local clickSound = props.clickSoundRef.current;
-      if clickSound then
-  
-        clickSound:Play();
-  
-      end;
   
       if props.allowPlayerToSkipDelay then
         
